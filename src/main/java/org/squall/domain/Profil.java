@@ -3,10 +3,19 @@ package org.squall.domain;
 public class Profil {
 
 
-    private String id;
+    private int id;
     private String libelle;
 
-    public Profil(String nom) {
-        this.libelle=nom;
+    public Profil(int id, String libelle) {
+        this.id=id;
+        this.libelle=libelle;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getLibelle() {
+        return libelle;
     }
 }
